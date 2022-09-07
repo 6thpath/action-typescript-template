@@ -107,6 +107,6 @@ with:
 
 See the [actions tab](https://github.com/6thpath/action-typescript-template/actions) for runs of this action! :rocket:
 
-## Usage
+### Usage
 
 After testing you can [create a v1 tag](https://github.com/actions/toolkit/blob/master/docs/action-versioning.md) to reference the stable and latest V1 action
