@@ -6,12 +6,12 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - "**.md"
+    paths:
+      - dist/**
 
   pull_request:
-    paths-ignore:
-      - "**.md"
+    paths:
+      - dist/**
 
 jobs:
   check-dist:
@@ -38,7 +38,6 @@ jobs:
       - name: Install dependencies and build
         run: |
           yarn install --immutable
-          yarn prepackage
           yarn package
 
       - name: Compare the expected and actual dist directories

@@ -7,8 +7,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint sources/**/*.ts",
-    "prepackage": "tsc",
-    "package": "ncc build --source-map --license licenses.txt",
+    "package": "tsc && ncc build --source-map --license licenses.txt",
     "test": "jest",
     "all": "yarn lint && yarn package && yarn test",
     "clean": "rimraf dist lib node_modules"
