@@ -1,3 +1,5 @@
+[![Build & Test](https://github.com/6thpath/action-typescript-template/actions/workflows/test.yml/badge.svg)](https://github.com/6thpath/action-typescript-template/actions/workflows/test.yml)
+[![CodeQL Analysis](https://github.com/6thpath/action-typescript-template/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/6thpath/action-typescript-template/actions/workflows/codeql-analysis.yml)
 
 # Create a Github Action using TypeScript
 
