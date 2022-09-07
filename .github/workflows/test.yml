@@ -1,0 +1,47 @@
+name: Build & Test
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          check-latest: true
+          cache: "yarn"
+
+      - name: Setup .yarnrc.yml
+        env:
+          NPM_AUTH_TOKEN: ${{ secrets.PACKAGE_READ_ACCESS_TOKEN }}
+        run: |
+          yarn config set npmScopes.6thpath.npmAuthToken $NPM_AUTH_TOKEN
+
+      - name: Install dependencies and build
+        run: |
+          yarn install --immutable
+          yarn all
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Test
+        uses: ./
+        with:
+          milliseconds: 1000
