@@ -31,7 +31,10 @@ jobs:
       - name: Install dependencies and build
         run: |
           yarn install --immutable
-          yarn all
+          yarn lint
+          yarn prepackage
+          yarn package
+          yarn test
 
   test:
     name: Test

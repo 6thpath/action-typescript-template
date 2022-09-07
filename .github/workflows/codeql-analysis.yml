@@ -53,6 +53,7 @@ jobs:
       - name: Install dependencies and build
         run: |
           yarn install --immutable
+          yarn prepackage
           yarn package
 
       - name: Perform CodeQL Analysis
