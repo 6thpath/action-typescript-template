@@ -28,7 +28,7 @@
   "packageManager": "yarn@3.2.3",
   "devDependencies": {
     "@6thpath/prettier-config": "1.0.0",
-    "@types/node": "18.7.15",
+    "@types/node": "18.11.3",
     "@typescript-eslint/parser": "5.36.2",
     "@vercel/ncc": "0.34.0",
     "eslint": "8.23.0",
