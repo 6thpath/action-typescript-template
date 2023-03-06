@@ -1003,10 +1003,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:18.7.15":
+"@types/node@npm:*":
   version: 18.7.15
   resolution: "@types/node@npm:18.7.15"
   checksum: 1435fc7fe44744467a3ba8ace646455be228516530dbb3db64a03cca6abcfdc5ba2e48a3eafc71f25f836d2ca871132361c58a5e760237a53674cb09151147d9
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:18.14.6":
+  version: 18.14.6
+  resolution: "@types/node@npm:18.14.6"
+  checksum: 2f88f482cabadc6dbddd627a1674239e68c3c9beab56eb4ae2309fb96fd17fc3a509d99b0309bafe13b58529574f49ecf3a583f2ebe2896dd32fe4be436dc96e
   languageName: node
   linkType: hard
 
@@ -1200,7 +1207,7 @@ __metadata:
   dependencies:
     "@6thpath/prettier-config": 1.0.0
     "@actions/core": 1.9.1
-    "@types/node": 18.7.15
+    "@types/node": 18.14.6
     "@typescript-eslint/parser": 5.36.2
     "@vercel/ncc": 0.34.0
     eslint: 8.23.0
